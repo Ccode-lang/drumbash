@@ -12,7 +12,7 @@ do
   fi
 done < "$input"
 run=1
-while [ $run == 1 ]
+while [[ $run == 1 ]]
 do
 printf "$"
 read com
