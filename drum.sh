@@ -16,7 +16,7 @@ while [[ $run == 1 ]]
 do
 printf "$"
 read com
-if [ $com == "exit" ]
+if [ "$com" == "exit" ]
 then
   run=0
 else
