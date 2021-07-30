@@ -1,4 +1,5 @@
 #!/bin/bash
+cd ~/drum_bash
 plugin=".drum"
 input="drumrc"
 while IFS= read -r line
