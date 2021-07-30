@@ -1,5 +1,5 @@
 #!/bin/bash
-input="~/drum_bash/drumrc"
+input="drumrc"
 while IFS= read -r line
 do
   inp="${line#[$'\r\t\n ']}"
