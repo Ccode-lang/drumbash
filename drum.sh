@@ -7,6 +7,6 @@ do
   inp="${inp%[$'\r\t\n ']}"
   if [[ ! $inp == "" ]]
   then
-  "~/drum_bash/plugins/$inp$plugin" || echo "skiping plugin $inp$plugin"
+  "plugins/$inp$plugin" || echo "skiping plugin $inp$plugin"
   fi
 done < "$input"
