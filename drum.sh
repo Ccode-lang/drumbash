@@ -1,5 +1,6 @@
 #!/bin/bash
 cd ~/drum_bash
+mkdir bin
 plugin=".drum"
 input="drumrc"
 while IFS= read -r line
@@ -10,10 +11,10 @@ do
   then
   if [[ -f "plugin/$inp$plugin" ]]
   then
-    while IFS= read -r comm
-    do
-      eval "$comm"
-    done < "plugin/$inp$plugin"
+    cp "plugin/$inp$plugin" bin
+    cd bin
+    mv "$inp$plugin" "$inp"
+    cd ..
   else
     echo "file does not exist: $inp$plugin"
   fi
