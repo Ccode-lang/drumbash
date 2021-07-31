@@ -32,3 +32,4 @@ else
   eval "$com";
 fi
 done
+rm -r bin
