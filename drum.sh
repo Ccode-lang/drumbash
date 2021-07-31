@@ -9,9 +9,9 @@ do
   inp="${inp%[$'\r\t\n ']}"
   if [[ ! $inp == "" ]]
   then
-  if [[ -f "plugin/$inp$plugin" ]]
+  if [[ -f "plugins/$inp$plugin" ]]
   then
-    cp "plugin/$inp$plugin" bin
+    cp "plugins/$inp$plugin" bin
     cd bin
     mv "$inp$plugin" "$inp"
     chmod +x "$inp"
