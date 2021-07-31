@@ -3,7 +3,7 @@ A plugin framework for bash!
 # Install
 ```bash
 cd ~
-git clone https://github.com/Ccode-lang/drum_bash
+git clone https://github.com/Ccode-lang/drumbash
 cd drum_bash
 chmod +x drum.sh
 ```
@@ -25,4 +25,4 @@ After installing plugins run:
 ```bash
 ./drum.sh
 ```
-This will load the plugin files listed in drumrc.
+This will load the plugin files listed in drumrc then run a the modded version of bash.
