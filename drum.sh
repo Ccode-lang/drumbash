@@ -38,7 +38,7 @@ else
     eval $com
   else
     firstplug=$(echo "~/drumbash/bin/$com" | awk '{print $1;}')
-    if command -v ""
+    if command -v "$firstplug" &> /dev/null
       eval "~/drumbash/bin/$com"
     else
       eval "$com"
