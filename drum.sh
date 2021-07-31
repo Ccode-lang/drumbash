@@ -22,29 +22,17 @@ do
   fi
 done < "$input"
 
-
+PATH="~/drumbash/bin:$PATH"
 run=1
 while [[ $run == 1 ]]
 do
 printf "$ "
 read com
-first=$(echo "$com" | awk '{print $1;}')
 if [ "$com" == "exit" ]
 then
   run=0
 else
-  if command -v "$first" &> /dev/null
-  then
-    eval $com
-  else
-    firstplug=$(echo "~/drumbash/bin/$com" | awk '{print $1;}')
-    if command -v "$firstplug" &> /dev/null
-      eval "~/drumbash/bin/$com"
-    fi
-    if ! command -v "$firstplug" &> /dev/nul
-      eval "$com"
-    fi
-  fi
+  eval "$com"
 fi
 done
 cd ~/drumbash
