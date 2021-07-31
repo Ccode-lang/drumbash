@@ -8,12 +8,12 @@ do
   inp="${inp%[$'\r\t\n ']}"
   if [[ ! $inp == "" ]]
   then
-  if [[ -f "/plugin/$inp$plugin" ]]
+  if [[ -f "plugin/$inp$plugin" ]]
   then
     while IFS= read -r comm
     do
       eval "$comm"
-    done < "/plugin/$inp$plugin"
+    done < "plugin/$inp$plugin"
   else
     echo "file does not exist: $inp$plugin"
   fi
