@@ -21,10 +21,12 @@ do
   fi
   fi
 done < "$input"
+
+
 run=1
 while [[ $run == 1 ]]
 do
-printf "$"
+printf "$ "
 read com
 first=$(echo "$com" | awk '{print $1;}')
 if [ "$com" == "exit" ]
