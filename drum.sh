@@ -1,5 +1,5 @@
 #!/bin/bash
-cd ~/drum_bash
+cd ~/drumbash
 mkdir bin
 plugin=".drum"
 input="drumrc"
@@ -21,7 +21,7 @@ do
   fi
   fi
 done < "$input"
-PATH="~/drum_bash/bin:$PATH"
+PATH="~/drumbash/bin:$PATH"
 run=1
 while [[ $run == 1 ]]
 do
