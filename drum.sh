@@ -8,7 +8,15 @@ do
   inp="${inp%[$'\r\t\n ']}"
   if [[ ! $inp == "" ]]
   then
-  chmod +x plugins/$inp$plugin 2> /dev/null && plugins/$inp$plugin || echo "skipping plugin $inp$plugin because it does not exist."
+  if [[ -f "/plugin/$inp$plugin" ]]
+  then
+    while IFS= read -r comm
+    do
+      eval "$comm"
+    done < "/plugin/$inp$plugin"
+  else
+    echo "file does not exist: $inp$plugin"
+  fi
   fi
 done < "$input"
 run=1
