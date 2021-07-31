@@ -20,6 +20,6 @@ if [ "$com" == "exit" ]
 then
   run=0
 else
-  $com
+  eval "$com";
 fi
 done
