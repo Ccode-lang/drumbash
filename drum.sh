@@ -40,7 +40,8 @@ else
     firstplug=$(echo "~/drumbash/bin/$com" | awk '{print $1;}')
     if command -v "$firstplug" &> /dev/null
       eval "~/drumbash/bin/$com"
-    else
+    fi
+    if ! command -v "$firstplug" &> /dev/nul
       eval "$com"
     fi
   fi
