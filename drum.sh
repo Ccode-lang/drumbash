@@ -14,12 +14,14 @@ do
     cp "plugin/$inp$plugin" bin
     cd bin
     mv "$inp$plugin" "$inp"
+    chmod +x "$inp"
     cd ..
   else
     echo "file does not exist: $inp$plugin"
   fi
   fi
 done < "$input"
+PATH="~/drum_bash/bin:$PATH"
 run=1
 while [[ $run == 1 ]]
 do
