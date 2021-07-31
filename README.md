@@ -4,7 +4,7 @@ A plugin framework for bash!
 ```bash
 cd ~
 git clone https://github.com/Ccode-lang/drumbash
-cd drum_bash
+cd drumbash
 chmod +x drum.sh
 ```
 # Installing plugins
