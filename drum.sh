@@ -34,4 +34,5 @@ else
   eval "$com";
 fi
 done
+cd ~/drumbash
 rm -r bin
