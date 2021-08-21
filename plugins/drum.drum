@@ -1,0 +1,12 @@
+if [[ "$1" == "-h" ]]
+then
+  echo "This is the drum command!"
+  echo "It is made to list plugins that are loaded."
+  echo "-h shows this menu"
+  echo "-l lists plugins loaded"
+elif [[ "$1" == "-l" ]]
+then
+  cat ~/drumbash/drumrc
+else
+  printf "please use -h\n"
+fi
