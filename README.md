@@ -2,9 +2,10 @@
 A plugin framework for bash!
 # Install
 ```bash
-wget https://raw.githubusercontent.com/Ccode-lang/drumbash/main/easyinst.sh
-chmod +x easyinst.sh
-./easyinst.sh
+cd ~
+git clone https://github.com/Ccode-lang/drumbash
+cd drumbash
+chmod +x drum.sh
 ```
 # Installing plugins
 Put the .drum plugins in the plugins folder and list there names in the drumrc file.  
