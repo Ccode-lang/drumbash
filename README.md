@@ -1,13 +1,13 @@
-## Drum Bash
+# Drum Bash
 A plugin framework for bash!
-## Install
+# Install
 ```bash
 cd ~
 git clone https://github.com/Ccode-lang/drumbash
 cd drumbash
 chmod +x drum.sh
 ```
-## Installing plugins
+# Installing plugins
 Put the .drum plugins in the plugins folder and list there names in the drumrc file.  
 example plugins content:
 ```
@@ -20,15 +20,15 @@ example drumrc content:
 ```
 test
 ```
-## running
+# running
 After installing plugins run this in ~/drumbash:
 ```bash
 ./drum.sh
 ```
 This will load the plugin files listed in drumrc then run a the modded version of bash.
-## using api
+# using api
 > api is in very early stages. It may have dramatic changes at any time!!!!
-# python
+## python
 To import the api in drum bash you need to do a few things first.
 1. instead of naming the file whatever.py name it whatever.drum
 2. add the below lines of code to the file
