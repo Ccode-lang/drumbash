@@ -41,5 +41,5 @@ mymodule_dir = os.path.join( home, 'drumbash', 'api')
 sys.path.append( mymodule_dir )
 import api
 ```
-Now you can call the api with api.command_you_want_to_use()
+Now you can call the api with api.command_you_want_to_use()  
 Template at https://github.com/Ccode-lang/pydrumplugin
