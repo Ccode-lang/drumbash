@@ -1,10 +1,10 @@
 from os import path
 
+#get drum api version
+def drumver():
+  return "drum bash py api 0.0.1"
+
 class file():
-  #get drum api version
-  def drumver():
-    return "drum bash py api 0.0.1"
-  
   # create a file. returns int as error code
   def create(create):
     try:
