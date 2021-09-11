@@ -2,7 +2,7 @@ from os import path
 
 #get drum api version
 def drumver():
-  return "drum bash py api 0.0.1"
+  return "drum bash py api 1.0"
 
 class file():
   # create a file. returns int as error code
