@@ -8,7 +8,8 @@ cd drumbash
 chmod +x drum.sh
 ```
 # Installing plugins
-Put the .drum plugins in the plugins folder and list there names in the drumrc file.  
+Put the .drum plugins in the plugins folder and list there names in the drumrc file.
+> make sure you end the drumrc in a newline!!!!!!
 example plugins content:
 ```
 plugins
@@ -19,6 +20,7 @@ __
 example drumrc content:
 ```
 test
+
 ```
 # running
 After installing plugins run this in ~/drumbash:
