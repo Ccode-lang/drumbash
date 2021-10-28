@@ -29,7 +29,9 @@ After installing plugins run this in ~/drumbash:
 ```
 This will load the plugin files listed in drumrc then run a the modded version of bash.
 # using api
-> api is in very early stages. It may have dramatic changes at any time!!!!
+> api is in very early stages. It may have dramatic changes at any time!!!!  
+
+[docs](https://github.com/Ccode-lang/drumbash/wiki/py-api-docs)
 ## python
 To import the api in drum bash you need to do a few things first.
 1. instead of naming the file whatever.py name it whatever.drum
